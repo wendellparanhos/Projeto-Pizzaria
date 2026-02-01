@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzaria Bella Napoli - A verdadeira pizza italiana na sua casa. Delivery rápido e ingredientes artesanais.">
+    <meta name="keywords" content="pizzaria, pizza delivery, pizza italiana, delivery de pizza">
+    <title>Pizzaria Bella Napoli - Pizza Italiana Artesanal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">🍕</span>
+                        <span class="logo-text">Bella Napoli</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                        <li><a href="#promocoes" class="nav-link">Promoções</a></li>
+                        <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                        <li><a href="#pedir" class="nav-link btn-nav">Pedir Agora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">A Verdadeira Pizza Italiana na Sua Casa</h1>
+            <p class="hero-subtitle">Massa artesanal, ingredientes frescos e o sabor autêntico da Itália em cada fatia</p>
+            <div class="hero-buttons">
+                <a href="#pedir" class="btn btn-primary btn-large">Pedir Agora</a>
+                <a href="#cardapio" class="btn btn-secondary btn-large">Ver Cardápio</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Role para descobrir</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-image">
+                    <div class="image-placeholder sobre-img"></div>
+                </div>
+                <div class="sobre-content">
+                    <span class="section-tag">Nossa História</span>
+                    <h2 class="section-title">Tradição Italiana desde 1995</h2>
+                    <p class="sobre-text">
+                        Na Bella Napoli, cada pizza é uma obra-prima. Trazemos a autêntica tradição napolitana 
+                        para sua mesa com receitas passadas de geração em geração.
+                    </p>
+                    <p class="sobre-text">
+                        Nosso forno a lenha importado atinge 400°C, garantindo aquela crosta perfeita: 
+                        crocante por fora e macia por dentro. Utilizamos apenas ingredientes premium: 
+                        tomates San Marzano, mussarela de búfala, azeite extravirgem e manjericão fresco.
+                    </p>
+                    <div class="sobre-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🔥</span>
+                            <div>
+                                <h4>Forno a Lenha</h4>
+                                <p>Importado da Itália</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌿</span>
+                            <div>
+                                <h4>Ingredientes Frescos</h4>
+                                <p>Selecionados diariamente</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👨‍🍳</span>
+                            <div>
+                                <h4>Pizzaiolos Experientes</h4>
+                                <p>Treinados em Nápoles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sabores Autênticos</span>
+                <h2 class="section-title">Nosso Cardápio</h2>
+                <p class="section-description">Pizzas artesanais feitas com amor e ingredientes premium</p>
+            </div>
+            
+            <div class="cardapio-filter">
+                <button class="filter-btn active" data-category="todas">Todas</button>
+                <button class="filter-btn" data-category="tradicionais">Tradicionais</button>
+                <button class="filter-btn" data-category="especiais">Especiais</button>
+                <button class="filter-btn" data-category="doces">Doces</button>
+            </div>
+
+            <div class="cardapio-grid" id="cardapioGrid">
+                <div class="pizza-card" data-category="tradicionais">
+                    <div class="pizza-image" id="pizza-image">
+                        <div class="image-placeholder pizza-margherita"></div>
+                        <span class="pizza-badge tradicional">Clássica</span>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Margherita</h3>
+                        <p class="pizza-description">Molho de tomate San Marzano, mussarela de búfala, manjericão fresco e azeite extravirgem</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 45,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Margherita', 45.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="tradicionais">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-calabresa"></div>
+                        <span class="pizza-badge popular">Popular</span>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Calabresa Especial</h3>
+                        <p class="pizza-description">Calabresa artesanal, cebola roxa, azeitonas pretas e orégano</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 42,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Calabresa Especial', 42.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="tradicionais">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-portuguesa"></div>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Portuguesa</h3>
+                        <p class="pizza-description">Presunto, ovos, cebola, azeitonas, mussarela e orégano</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 48,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Portuguesa', 48.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="especiais">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-quattro"></div>
+                        <span class="pizza-badge premium">Premium</span>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Quattro Formaggi</h3>
+                        <p class="pizza-description">Mussarela, gorgonzola, parmesão e provolone. Um festival de queijos!</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 54,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Quattro Formaggi', 54.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="especiais">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-pepperoni"></div>
+                        <span class="pizza-badge vendida">Mais Vendida</span>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Pepperoni Premium</h3>
+                        <p class="pizza-description">Generosas fatias de pepperoni, mussarela e pimenta calabresa</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 52,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Pepperoni Premium', 52.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="especiais">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-rucola"></div>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Rúcula com Parmesão</h3>
+                        <p class="pizza-description">Mussarela, rúcula fresca, tomate cereja, parmesão em lascas e azeite</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 49,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Rúcula com Parmesão', 49.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="doces">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-chocolate"></div>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Chocolate com Morango</h3>
+                        <p class="pizza-description">Chocolate ao leite, morangos frescos e granulado</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 38,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Chocolate com Morango', 38.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="doces">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-romeu"></div>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Romeu e Julieta</h3>
+                        <p class="pizza-description">Goiabada cremosa e queijo mussarela. A combinação perfeita!</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 36,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Romeu e Julieta', 36.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card" data-category="doces">
+                    <div class="pizza-image">
+                        <div class="image-placeholder pizza-nutella"></div>
+                        <span class="pizza-badge nova">Novidade</span>
+                    </div>
+                    <div class="pizza-info">
+                        <h3 class="pizza-name">Nutella com Banana</h3>
+                        <p class="pizza-description">Nutella cremosa, rodelas de banana fresca e açúcar de confeiteiro</p>
+                        <div class="pizza-footer">
+                            <span class="pizza-price">R$ 42,90</span>
+                            <button class="btn btn-small btn-primary" onclick="adicionarAoPedido('Nutella com Banana', 42.90)">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="promocoes" id="promocoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ofertas Especiais</span>
+                <h2 class="section-title">Promoções Imperdíveis</h2>
+            </div>
+            <div class="promocoes-grid">
+                <div class="promo-card promo-destaque">
+                    <div class="promo-image">
+                        <img src="assets/images/promo-combo.svg" alt="Combo Família">
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-badge">🔥 Oferta do Dia</div>
+                        <h3>Combo Família</h3>
+                        <p class="promo-description">2 Pizzas Grandes + 2L Refrigerante + Sobremesa</p>
+                        <div class="promo-price">
+                            <span class="price-old">R$ 159,90</span>
+                            <span class="price-new">R$ 119,90</span>
+                        </div>
+                        <button class="btn btn-primary" onclick="adicionarAoPedido('Combo Família', 119.90)">Aproveitar Oferta</button>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <div class="promo-image">
+                        <img src="assets/images/promo-2mais1.svg" alt="Compre 2 Leve 3">
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-badge">🍕 Segunda a Quarta</div>
+                        <h3>Compre 2, Leve 3</h3>
+                        <p class="promo-description">Na compra de 2 pizzas grandes, ganhe 1 média</p>
+                        <div class="promo-price">
+                            <span class="price-new">Economia de até R$ 40</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="adicionarAoPedido('Compre 2 Leve 3', 120.50)">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <div class="promo-image">
+                        <img src="assets/images/promo-happy.svg" alt="Happy Hour">
+                    </div>
+                    <div class="promo-content">
+                        <div class="promo-badge">🎉 Fim de Semana</div>
+                        <h3>Happy Hour</h3>
+                        <p class="promo-description">15% OFF em pedidos acima de R$ 80 após às 18h</p>
+                        <div class="promo-price">
+                            <span class="price-new">Sexta, Sábado e Domingo</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="adicionarAoPedido('Happy Hour', 50.00)">Aproveitar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="avaliacoes" id="avaliacoes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            </div>
+            <div class="avaliacoes-grid">
+                <div class="avaliacao-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="avaliacao-text">"Simplesmente a melhor pizza que já comi! A massa é perfeita e os ingredientes são de primeira qualidade. Virou minha pizzaria favorita!"</p>
+                    <div class="avaliacao-autor">
+                        <img src="assets/images/avatar-maria.svg" alt="Maria Clara" class="autor-avatar">
+                        <div>
+                            <h4>Maria Clara</h4>
+                            <span>Cliente há 2 anos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="avaliacao-text">"Delivery super rápido e a pizza chega quentinha. O sabor é incomparável, parece que estou na Itália. Recomendo demais!"</p>
+                    <div class="avaliacao-autor">
+                        <img src="assets/images/avatar-ricardo.svg" alt="Ricardo Santos" class="autor-avatar">
+                        <div>
+                            <h4>Ricardo Santos</h4>
+                            <span>Cliente há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="avaliacao-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="avaliacao-text">"Atendimento impecável e pizzas maravilhosas. A Margherita é divina! Preço justo pela qualidade oferecida."</p>
+                    <div class="avaliacao-autor">
+                        <img src="assets/images/avatar-ana.svg" alt="Ana Ferreira" class="autor-avatar">
+                        <div>
+                            <h4>Ana Ferreira</h4>
+                            <span>Cliente há 6 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Processo Simples</span>
+                <h2 class="section-title">Como Fazer Seu Pedido</h2>
+            </div>
+            <div class="passos-grid">
+                <div class="passo-card">
+                    <div class="passo-numero">1</div>
+                    <div class="passo-icon">
+                        <img src="assets/images/icon-escolha.svg" alt="Escolha">
+                    </div>
+                    <h3>Escolha</h3>
+                    <p>Navegue pelo nosso cardápio e selecione suas pizzas favoritas</p>
+                </div>
+                <div class="passo-arrow">→</div>
+                <div class="passo-card">
+                    <div class="passo-numero">2</div>
+                    <div class="passo-icon">
+                        <img src="assets/images/icon-peca.svg" alt="Peça">
+                    </div>
+                    <h3>Peça</h3>
+                    <p>Envie seu pedido via WhatsApp ou telefone de forma rápida</p>
+                </div>
+                <div class="passo-arrow">→</div>
+                <div class="passo-card">
+                    <div class="passo-numero">3</div>
+                    <div class="passo-icon">
+                        <img src="assets/images/icon-receba.svg" alt="Receba">
+                    </div>
+                    <h3>Receba</h3>
+                    <p>Aguarde confortavelmente. Entregamos em até 40 minutos!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h2>Visite-nos ou Peça Delivery</h2>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Pizzas, 123 - Centro<br>São Paulo, SP - CEP 01234-567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Quinta: 18h - 23h<br>Sexta a Domingo: 18h - 00h</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 98765-4321</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@bellanapoli.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato-mapa">
+                    <div class="mapa-placeholder">
+                        <p>📍 Localização no Mapa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final" id="pedir">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Está com Fome?</h2>
+                <p>Peça agora e receba sua pizza quentinha em até 40 minutos!</p>
+                <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" class="btn btn-whatsapp btn-large" target="_blank">
+                    <span class="whatsapp-icon">📱</span>
+                    Pedir pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Bella Napoli</h3>
+                    <p>A verdadeira pizza italiana na sua casa desde 1995.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <ul class="footer-links">
+                        <li>Segunda a Quinta: 18h - 23h</li>
+                        <li>Sexta a Domingo: 18h - 00h</li>
+                        <li>(11) 98765-4321</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Receba nossas promoções</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" id="newsletterEmail">
+                        <button class="btn btn-small btn-primary" onclick="inscreverNewsletter()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bella Napoli. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <span class="whatsapp-icon-float">💬</span>
+    </a>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">↑</button>
+
+    <!-- Modal de Pedido -->
+    <div class="modal-overlay" id="modalPedido">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">&times;</button>
+            
+            <div class="modal-header">
+                <h2>🍕 Seu Pedido</h2>
+                <p>Revise os itens antes de finalizar</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="carrinho-vazio" id="carrinhoVazio">
+                    <div class="empty-icon">🛒</div>
+                    <p>Seu carrinho está vazio</p>
+                    <span>Adicione pizzas deliciosas ao seu pedido!</span>
+                </div>
+
+                <div class="carrinho-itens" id="carrinhoItens">
+                    <!-- Items serão adicionados dinamicamente via JavaScript -->
+                </div>
+
+                <div class="carrinho-resumo" id="carrinhoResumo" style="display: none;">
+                    <div class="resumo-linha">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">R$ 0,00</span>
+                    </div>
+                    <div class="resumo-linha">
+                        <span>Taxa de entrega:</span>
+                        <span id="taxaEntrega">R$ 8,00</span>
+                    </div>
+                    <div class="resumo-linha resumo-total">
+                        <span>Total:</span>
+                        <span id="total">R$ 0,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-large" id="btnContinuarComprando">Continuar Comprando</button>
+                <button class="btn btn-primary btn-large" id="btnFinalizarPedido" disabled>
+                    <span>Finalizar no WhatsApp</span>
+                    <span style="margin-left: 0.5rem;">💬</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

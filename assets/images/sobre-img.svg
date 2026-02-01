@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+  <defs>
+    <radialGradient id="ovenGlow" cx="50%" cy="60%">
+      <stop offset="0%" style="stop-color:#ff6b00;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#d32f2f;stop-opacity:0.3" />
+    </radialGradient>
+    <linearGradient id="woodTexture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a0522d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b4513;stop-opacity:1" />
+    </linearGradient>
+    <filter id="flame">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="500" fill="#2d1f1a"/>
+  
+  <!-- Wood-fired oven -->
+  <g>
+    <!-- Oven body -->
+    <ellipse cx="300" cy="400" rx="200" ry="80" fill="#3d2314" opacity="0.3"/>
+    <rect x="150" y="200" width="300" height="200" rx="20" fill="url(#woodTexture)"/>
+    
+    <!-- Oven opening -->
+    <ellipse cx="300" cy="300" rx="80" ry="60" fill="#1a1a1a"/>
+    <ellipse cx="300" cy="295" rx="75" ry="55" fill="url(#ovenGlow)"/>
+    
+    <!-- Fire inside oven -->
+    <g filter="url(#flame)">
+      <path d="M 280 310 Q 275 290 280 270 Q 285 290 280 310" fill="#ff6b00" opacity="0.8"/>
+      <path d="M 300 315 Q 295 290 300 260 Q 305 290 300 315" fill="#ff4500" opacity="0.9"/>
+      <path d="M 320 310 Q 315 290 320 270 Q 325 290 320 310" fill="#ff6b00" opacity="0.8"/>
+    </g>
+    
+    <!-- Oven bricks texture -->
+    <g opacity="0.3">
+      <rect x="160" y="210" width="40" height="20" fill="#6b4423"/>
+      <rect x="210" y="210" width="40" height="20" fill="#6b4423"/>
+      <rect x="260" y="210" width="40" height="20" fill="#6b4423"/>
+      <rect x="310" y="210" width="40" height="20" fill="#6b4423"/>
+      <rect x="360" y="210" width="40" height="20" fill="#6b4423"/>
+      <rect x="410" y="210" width="30" height="20" fill="#6b4423"/>
+    </g>
+  </g>
+  
+  <!-- Pizza on peel -->
+  <g transform="translate(0, -30)">
+    <!-- Pizza peel (wooden paddle) -->
+    <ellipse cx="300" cy="350" rx="70" ry="50" fill="#d4a574"/>
+    <rect x="295" y="350" width="10" height="120" fill="#8b6f47"/>
+    
+    <!-- Pizza on peel -->
+    <circle cx="300" cy="340" r="60" fill="#f4e4c1"/>
+    <circle cx="300" cy="340" r="52" fill="#ff6b6b" opacity="0.8"/>
+    <circle cx="300" cy="340" r="48" fill="#fffacd" opacity="0.7"/>
+    
+    <!-- Toppings -->
+    <circle cx="285" cy="330" r="8" fill="#d32f2f"/>
+    <circle cx="315" cy="330" r="8" fill="#d32f2f"/>
+    <circle cx="300" cy="345" r="8" fill="#d32f2f"/>
+    <ellipse cx="290" cy="345" rx="6" ry="8" fill="#2e7d32" transform="rotate(-15 290 345)"/>
+    <ellipse cx="310" cy="338" rx="6" ry="8" fill="#2e7d32" transform="rotate(20 310 338)"/>
+  </g>
+  
+  <!-- Chef tools -->
+  <g transform="translate(450, 250)">
+    <!-- Flour bag -->
+    <rect x="0" y="20" width="50" height="70" rx="5" fill="#f5f5dc"/>
+    <text x="25" y="55" text-anchor="middle" font-size="12" fill="#8b4513">FLOUR</text>
+    <path d="M 10 20 Q 25 10 40 20" fill="#e8d5c0"/>
+  </g>
+  
+  <!-- Basil plant -->
+  <g transform="translate(80, 280)">
+    <rect x="20" y="60" width="30" height="40" rx="3" fill="#8b4513"/>
+    <ellipse cx="35" cy="65" rx="25" ry="10" fill="#6b4423"/>
+    
+    <!-- Basil leaves -->
+    <ellipse cx="25" cy="40" rx="8" ry="12" fill="#2e7d32"/>
+    <ellipse cx="35" cy="35" rx="10" ry="14" fill="#2e7d32"/>
+    <ellipse cx="45" cy="40" rx="8" ry="12" fill="#2e7d32"/>
+    <ellipse cx="30" cy="50" rx="9" ry="13" fill="#1b5e20"/>
+    <ellipse cx="40" cy="48" rx="8" ry="11" fill="#1b5e20"/>
+  </g>
+  
+  <!-- Tomatoes -->
+  <g transform="translate(500, 350)">
+    <circle cx="0" cy="0" r="20" fill="#ff6b6b"/>
+    <circle cx="2" cy="-2" r="6" fill="#ff9999"/>
+    <path d="M 0 -20 L 0 -15" stroke="#2e7d32" stroke-width="3"/>
+    
+    <circle cx="30" cy="5" r="18" fill="#ff6b6b"/>
+    <circle cx="32" cy="3" r="5" fill="#ff9999"/>
+    <path d="M 30 -13 L 30 -8" stroke="#2e7d32" stroke-width="3"/>
+  </g>
+  
+  <!-- Olive oil bottle -->
+  <g transform="translate(70, 350)">
+    <rect x="10" y="30" width="20" height="50" rx="3" fill="#c4d6a4" opacity="0.6"/>
+    <rect x="12" y="25" width="16" height="10" rx="2" fill="#8b7355"/>
+    <ellipse cx="20" cy="25" rx="3" ry="5" fill="#6b5d4f"/>
+    <circle cx="20" cy="55" r="5" fill="#d4af37" opacity="0.4"/>
+  </g>
+  
+  <!-- Steam/smoke -->
+  <g opacity="0.3" fill="#ffffff">
+    <ellipse cx="250" cy="180" rx="15" ry="25" filter="url(#flame)"/>
+    <ellipse cx="350" cy="170" rx="12" ry="20" filter="url(#flame)"/>
+    <ellipse cx="300" cy="160" rx="18" ry="30" filter="url(#flame)"/>
+  </g>
+  
+  <!-- Sparkles for warmth effect -->
+  <g fill="#ffa726" opacity="0.5">
+    <circle cx="280" cy="240" r="2"/>
+    <circle cx="320" cy="245" r="2"/>
+    <circle cx="300" cy="225" r="2"/>
+    <circle cx="310" cy="260" r="2"/>
+  </g>
+</svg>

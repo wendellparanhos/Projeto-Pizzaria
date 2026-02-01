@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="doughNutella" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#e8d4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b896;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="nutella" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3d2517;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#5c3a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a2c1a;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="banana" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff4b3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe66d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadowNutella">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="200" cy="200" r="180" fill="#2d1f1a" opacity="0.1"/>
+  
+  <!-- Pizza Base (Dough) -->
+  <circle cx="200" cy="200" r="160" fill="url(#doughNutella)" filter="url(#shadowNutella)"/>
+  
+  <!-- Crust texture -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#d4b896" stroke-width="8" opacity="0.5"/>
+  <circle cx="200" cy="200" r="148" fill="none" stroke="#c9a882" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Nutella layer -->
+  <circle cx="200" cy="200" r="135" fill="url(#nutella)"/>
+  
+  <!-- Nutella texture/swirls -->
+  <g opacity="0.3">
+    <circle cx="180" cy="180" r="25" fill="#5c3a2a"/>
+    <circle cx="230" cy="190" r="28" fill="#5c3a2a"/>
+    <circle cx="200" cy="230" r="26" fill="#5c3a2a"/>
+    <ellipse cx="160" cy="220" rx="32" ry="27" fill="#5c3a2a"/>
+    <ellipse cx="240" cy="220" rx="30" ry="25" fill="#5c3a2a"/>
+  </g>
+  
+  <!-- Nutella shine/gloss -->
+  <g opacity="0.2">
+    <ellipse cx="190" cy="170" rx="35" ry="25" fill="#8b5a3c"/>
+    <ellipse cx="230" cy="185" rx="40" ry="28" fill="#8b5a3c"/>
+    <ellipse cx="200" cy="220" rx="38" ry="26" fill="#8b5a3c"/>
+  </g>
+  
+  <!-- Banana slices -->
+  <g filter="url(#shadowNutella)">
+    <!-- Banana slice 1 -->
+    <ellipse cx="170" cy="170" rx="18" ry="16" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="170" cy="170" rx="12" ry="10" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="170" cy="170" r="3" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 2 -->
+    <ellipse cx="230" cy="175" rx="20" ry="18" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="230" cy="175" rx="14" ry="12" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="230" cy="175" r="3.5" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 3 -->
+    <ellipse cx="200" cy="210" rx="19" ry="17" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="200" cy="210" rx="13" ry="11" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="200" cy="210" r="3" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 4 -->
+    <ellipse cx="155" cy="215" rx="17" ry="15" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="155" cy="215" rx="11" ry="9" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="155" cy="215" r="2.5" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 5 -->
+    <ellipse cx="245" cy="220" rx="18" ry="16" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="245" cy="220" rx="12" ry="10" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="245" cy="220" r="3" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 6 -->
+    <ellipse cx="185" cy="195" rx="16" ry="14" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="185" cy="195" rx="10" ry="8" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="185" cy="195" r="2.5" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 7 -->
+    <ellipse cx="215" cy="200" rx="17" ry="15" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="215" cy="200" rx="11" ry="9" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="215" cy="200" r="2.5" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 8 -->
+    <ellipse cx="170" cy="240" rx="18" ry="16" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="170" cy="240" rx="12" ry="10" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="170" cy="240" r="3" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 9 -->
+    <ellipse cx="220" cy="235" rx="17" ry="15" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="220" cy="235" rx="11" ry="9" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="220" cy="235" r="2.5" fill="#f4e4a8" opacity="0.6"/>
+    
+    <!-- Banana slice 10 (center) -->
+    <ellipse cx="200" cy="185" rx="18" ry="16" fill="url(#banana)" opacity="0.95"/>
+    <ellipse cx="200" cy="185" rx="12" ry="10" fill="#fff9d6" opacity="0.7"/>
+    <circle cx="200" cy="185" r="3" fill="#f4e4a8" opacity="0.6"/>
+  </g>
+  
+  <!-- Chocolate drizzle on top -->
+  <g opacity="0.9" stroke="#3d2517" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 150 185 Q 170 190 190 185 Q 210 180 230 185"/>
+    <path d="M 155 205 Q 180 210 200 205 Q 220 200 245 205"/>
+    <path d="M 145 225 Q 170 230 195 225 Q 220 220 250 225"/>
+  </g>
+  
+  <!-- Powdered sugar dusting -->
+  <g fill="#ffffff" opacity="0.3">
+    <circle cx="165" cy="180" r="1.5"/>
+    <circle cx="235" cy="185" r="1.5"/>
+    <circle cx="195" cy="215" r="1.5"/>
+    <circle cx="160" cy="225" r="1.5"/>
+    <circle cx="240" cy="230" r="1.5"/>
+    <circle cx="180" cy="200" r="1.5"/>
+    <circle cx="210" cy="195" r="1.5"/>
+    <circle cx="175" cy="245" r="1.5"/>
+    <circle cx="225" cy="240" r="1.5"/>
+    <circle cx="205" cy="190" r="1.5"/>
+    <circle cx="190" cy="220" r="1.5"/>
+    <circle cx="155" cy="200" r="1.5"/>
+    <circle cx="245" cy="210" r="1.5"/>
+  </g>
+  
+  <!-- Melted nutella drops -->
+  <g opacity="0.4">
+    <ellipse cx="150" cy="195" rx="3" ry="4" fill="#3d2517"/>
+    <ellipse cx="250" cy="200" rx="3" ry="4" fill="#3d2517"/>
+    <ellipse cx="200" cy="240" rx="3" ry="4" fill="#3d2517"/>
+  </g>
+  
+  <!-- Highlights on nutella -->
+  <ellipse cx="190" cy="165" rx="15" ry="12" fill="#8b5a3c" opacity="0.4"/>
+  <ellipse cx="230" cy="180" rx="18" ry="14" fill="#8b5a3c" opacity="0.4"/>
+  <ellipse cx="205" cy="225" rx="16" ry="13" fill="#8b5a3c" opacity="0.4"/>
+</svg>

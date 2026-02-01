@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <radialGradient id="faceBg3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffe4c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5d5ae;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="hair3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b6f47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b5838;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="#fff3e0"/>
+  
+  <!-- Hair (wavy) -->
+  <ellipse cx="60" cy="42" rx="43" ry="32" fill="url(#hair3)"/>
+  <path d="M 18 50 Q 15 40 20 35 Q 30 28 45 26 Q 60 25 75 26 Q 90 28 100 35 Q 105 40 102 50" fill="url(#hair3)"/>
+  
+  <!-- Wavy hair details -->
+  <path d="M 25 45 Q 30 42 35 45 Q 40 48 45 45 Q 50 42 55 45" stroke="#6b5838" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 65 45 Q 70 42 75 45 Q 80 48 85 45 Q 90 42 95 45" stroke="#6b5838" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Face -->
+  <ellipse cx="60" cy="67" rx="36" ry="42" fill="url(#faceBg3)"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="47" cy="62" rx="4" ry="7" fill="#4a2c1a"/>
+  <ellipse cx="73" cy="62" rx="4" ry="7" fill="#4a2c1a"/>
+  <circle cx="48" cy="61" r="1.5" fill="#ffffff"/>
+  <circle cx="74" cy="61" r="1.5" fill="#ffffff"/>
+  
+  <!-- Eyelashes -->
+  <path d="M 44 56 L 42 54" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 47 55 L 47 52" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 50 56 L 52 54" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <path d="M 70 56 L 68 54" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 73 55 L 73 52" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 76 56 L 78 54" stroke="#3d2314" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Eyebrows (thin) -->
+  <path d="M 40 54 Q 47 52 54 54" stroke="#6b5838" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 66 54 Q 73 52 80 54" stroke="#6b5838" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <ellipse cx="60" cy="73" rx="3" ry="6" fill="#f5d5ae" opacity="0.5"/>
+  
+  <!-- Smile with lipstick -->
+  <path d="M 47 82 Q 60 88 73 82" stroke="#d94a3d" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="60" cy="82" rx="13" ry="3" fill="#ff6b8a" opacity="0.3"/>
+  
+  <!-- Blush -->
+  <ellipse cx="38" cy="74" rx="7" ry="5" fill="#ffb3ba" opacity="0.6"/>
+  <ellipse cx="82" cy="74" rx="7" ry="5" fill="#ffb3ba" opacity="0.6"/>
+  
+  <!-- Earrings -->
+  <circle cx="24" cy="67" r="3.5" fill="#e91e63"/>
+  <ellipse cx="24" cy="71" rx="2" ry="4" fill="#e91e63"/>
+  
+  <circle cx="96" cy="67" r="3.5" fill="#e91e63"/>
+  <ellipse cx="96" cy="71" rx="2" ry="4" fill="#e91e63"/>
+  
+  <!-- Necklace hint -->
+  <circle cx="60" cy="108" r="4" fill="#ffd700"/>
+</svg>

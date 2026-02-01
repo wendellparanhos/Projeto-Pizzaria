@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#d32f2f;stop-opacity:0.8" />
+    </radialGradient>
+    <linearGradient id="pizzaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.3" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="800" height="600" fill="url(#heroGlow)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="100" r="80" fill="#d32f2f" opacity="0.2"/>
+  <circle cx="650" cy="450" r="120" fill="#d32f2f" opacity="0.15"/>
+  <circle cx="700" cy="150" r="60" fill="#2e7d32" opacity="0.2"/>
+  <circle cx="100" cy="500" r="70" fill="#ffa726" opacity="0.15"/>
+  
+  <!-- Large pizza illustration -->
+  <g transform="translate(300, 200)" filter="url(#glow)">
+    <!-- Pizza base -->
+    <circle cx="200" cy="200" r="180" fill="#f4e4c1" opacity="0.9"/>
+    <circle cx="200" cy="200" r="165" fill="#ff6b6b" opacity="0.8"/>
+    
+    <!-- Cheese -->
+    <circle cx="200" cy="200" r="155" fill="#fffacd" opacity="0.7"/>
+    
+    <!-- Toppings pattern -->
+    <g opacity="0.8">
+      <circle cx="160" cy="170" r="20" fill="#d32f2f"/>
+      <circle cx="240" cy="180" r="22" fill="#d32f2f"/>
+      <circle cx="200" cy="220" r="20" fill="#d32f2f"/>
+      <circle cx="170" cy="230" r="18" fill="#d32f2f"/>
+      <circle cx="230" cy="230" r="20" fill="#d32f2f"/>
+      
+      <!-- Basil leaves -->
+      <ellipse cx="180" cy="190" rx="12" ry="16" fill="#2e7d32" transform="rotate(-20 180 190)"/>
+      <ellipse cx="220" cy="210" rx="14" ry="18" fill="#2e7d32" transform="rotate(15 220 210)"/>
+      <ellipse cx="195" cy="215" rx="12" ry="16" fill="#2e7d32"/>
+    </g>
+    
+    <!-- Pizza shine -->
+    <ellipse cx="180" cy="160" rx="40" ry="30" fill="#ffffff" opacity="0.2"/>
+  </g>
+  
+  <!-- Floating ingredients -->
+  <g opacity="0.6">
+    <!-- Tomato -->
+    <circle cx="120" cy="250" r="25" fill="#ff6b6b"/>
+    <circle cx="122" cy="248" r="8" fill="#ff9999"/>
+    
+    <!-- Basil -->
+    <ellipse cx="680" cy="200" rx="15" ry="25" fill="#2e7d32" transform="rotate(30 680 200)"/>
+    
+    <!-- Olive -->
+    <circle cx="100" cy="350" r="18" fill="#1a1a1a"/>
+    <circle cx="103" cy="347" r="6" fill="#4a4a4a"/>
+    
+    <!-- Cheese -->
+    <path d="M 700 350 L 720 340 L 730 360 L 710 370 Z" fill="#fff9e6"/>
+  </g>
+  
+  <!-- Decorative lines -->
+  <g stroke="#ffffff" stroke-width="2" opacity="0.1" fill="none">
+    <circle cx="400" cy="100" r="40"/>
+    <circle cx="400" cy="100" r="60"/>
+    <circle cx="600" cy="500" r="50"/>
+    <circle cx="600" cy="500" r="70"/>
+  </g>
+  
+  <!-- Abstract shapes -->
+  <g opacity="0.15">
+    <rect x="50" y="50" width="30" height="30" rx="5" fill="#ffa726" transform="rotate(45 65 65)"/>
+    <rect x="730" y="80" width="25" height="25" rx="5" fill="#2e7d32" transform="rotate(30 742 92)"/>
+    <rect x="80" y="520" width="28" height="28" rx="5" fill="#d32f2f" transform="rotate(60 94 534)"/>
+  </g>
+  
+  <!-- Sparkles -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="250" cy="150" r="3"/>
+    <circle cx="550" cy="180" r="2"/>
+    <circle cx="180" cy="450" r="3"/>
+    <circle cx="720" cy="420" r="2"/>
+    <circle cx="350" cy="80" r="2"/>
+  </g>
+</svg>

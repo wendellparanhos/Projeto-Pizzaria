@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="dough2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f4e4c1;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#e8d4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b896;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="sauce2" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d32f2f;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="calabresa" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#c44536;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b1a1a;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="200" cy="200" r="180" fill="#2d1f1a" opacity="0.1"/>
+  <circle cx="200" cy="200" r="160" fill="url(#dough2)" filter="url(#shadow2)"/>
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#d4b896" stroke-width="8" opacity="0.5"/>
+  <circle cx="200" cy="200" r="135" fill="url(#sauce2)"/>
+  
+  <!-- Cheese base -->
+  <circle cx="200" cy="200" r="130" fill="#fffacd" opacity="0.7"/>
+  
+  <!-- Calabresa slices -->
+  <g filter="url(#shadow2)">
+    <ellipse cx="180" cy="170" rx="28" ry="32" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="178" cy="168" rx="3" ry="4" fill="#f4e4c1" opacity="0.6"/>
+    <ellipse cx="185" cy="173" rx="2" ry="3" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="240" cy="180" rx="30" ry="35" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="238" cy="177" rx="3" ry="4" fill="#f4e4c1" opacity="0.6"/>
+    <ellipse cx="245" cy="185" rx="2" ry="3" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="210" cy="230" rx="32" ry="30" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="208" cy="228" rx="3" ry="4" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="160" cy="230" rx="28" ry="30" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="158" cy="228" rx="3" ry="3" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="235" cy="235" rx="30" ry="28" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="233" cy="233" rx="3" ry="4" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="200" cy="190" rx="26" ry="28" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="198" cy="188" rx="3" ry="3" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="150" cy="200" rx="25" ry="27" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="148" cy="198" rx="2" ry="3" fill="#f4e4c1" opacity="0.6"/>
+    
+    <ellipse cx="255" cy="210" rx="28" ry="30" fill="url(#calabresa)" opacity="0.95"/>
+    <ellipse cx="253" cy="208" rx="3" ry="4" fill="#f4e4c1" opacity="0.6"/>
+  </g>
+  
+  <!-- Onion rings -->
+  <g opacity="0.8">
+    <ellipse cx="170" cy="195" rx="8" ry="6" fill="none" stroke="#e8d5f5" stroke-width="2"/>
+    <ellipse cx="220" cy="205" rx="9" ry="7" fill="none" stroke="#e8d5f5" stroke-width="2"/>
+    <ellipse cx="195" cy="220" rx="7" ry="6" fill="none" stroke="#e8d5f5" stroke-width="2"/>
+    <ellipse cx="230" cy="195" rx="8" ry="6" fill="none" stroke="#e8d5f5" stroke-width="2"/>
+    <ellipse cx="180" cy="215" rx="9" ry="7" fill="none" stroke="#e8d5f5" stroke-width="2"/>
+  </g>
+  
+  <!-- Black olives -->
+  <circle cx="165" cy="180" r="5" fill="#1a1a1a"/>
+  <circle cx="225" cy="220" r="5" fill="#1a1a1a"/>
+  <circle cx="200" cy="200" r="5" fill="#1a1a1a"/>
+  <circle cx="240" cy="190" r="5" fill="#1a1a1a"/>
+  <circle cx="175" cy="240" r="5" fill="#1a1a1a"/>
+  
+  <!-- Oregano specks -->
+  <circle cx="155" cy="210" r="1" fill="#4a5d23" opacity="0.7"/>
+  <circle cx="245" cy="175" r="1" fill="#4a5d23" opacity="0.7"/>
+  <circle cx="190" cy="245" r="1" fill="#4a5d23" opacity="0.7"/>
+  <circle cx="215" cy="165" r="1" fill="#4a5d23" opacity="0.7"/>
+</svg>
